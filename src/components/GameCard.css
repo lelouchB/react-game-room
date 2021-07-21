@@ -1,0 +1,67 @@
+.card {
+    height: 100px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.card--grid {
+    display: grid;
+    grid-template-areas: "status status info" "status status content" "status status content";
+}
+
+.card--grid-status {
+    grid-area: status;
+    border: 1px solid #000;
+    width: 20px;
+}
+
+.card--grid-status-scheduled {
+    height: 100%;
+    background: #808080;
+}
+
+.card--grid-status-in_progress {
+    height: 100%;
+    background: #00FF00;
+}
+
+.card--grid-status-done {
+    height: 100%;
+    background: #000000;
+}
+
+.card--grid-status-issue {
+    height: 100%;
+    background: #FFFF00;
+}
+
+.card--grid-info {
+    grid-area: info;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #000;
+    width: 500px;
+    height: 30px;
+    background: #eaeaea;
+}
+
+.card--content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 750px;
+    height: 80px;
+    border: 1px solid #000;
+}
+
+.card--username {
+    flex: 1 1 auto;
+}
+
+.card--status {
+    margin-right: 10px;
+    text-transform: uppercase;
+}
