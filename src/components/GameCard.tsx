@@ -13,13 +13,6 @@ export type DataProps = {
   status: string;
 };
 
-// type StatusColors = {
-//   scheduled: string;
-//   in_progress: string;
-//   done: string;
-//   issue: string;
-// };
-
 const GameCard: React.FC<DataProps> = ({
   id,
   scheduledTime,
