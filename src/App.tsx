@@ -64,11 +64,8 @@ function App() {
   const clear = () => {
     setSelectedCompany("");
     setSearchTerm("");
+    window.location.reload();
   };
-
-  if (loading) {
-    return <div> Loading...</div>;
-  }
 
   return (
     <div className="App">
@@ -120,6 +117,8 @@ function App() {
             status={item.status}
           />
         ))}
+
+      {loading && <div className="loading">Loading...</div>}
     </div>
   );
 }

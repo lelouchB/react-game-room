@@ -61,3 +61,10 @@ select {
     padding: 6px 15px;
     height: 40px;
 }
+
+.loading {
+    font-size: 3rem;
+    font-family: Roboto;
+    color: gray;
+    padding: 30px;
+}
