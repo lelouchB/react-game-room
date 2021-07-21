@@ -97,7 +97,7 @@ function App() {
 
             {companies &&
               companies.length > 0 &&
-              companies.map((company: any, index: number) => (
+              companies.map((company: string, index: number) => (
                 <option key={index} value={company}>
                   {company}
                 </option>
